@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="profile-card">
+    <div class="profile-header">
+      <h1>My Account</h1>
+      <!-- Add your profile picture here -->
+    </div>
+    <div class="profile-details">
+      <h2>User name: {{ user?.username }}</h2>
+      <p>Email: {{ user?.email }}</p>
+      <p>Mobile no: {{ user?.mobileno }}</p>
+      <div class="buttons">
+        <button class="logout-button" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>

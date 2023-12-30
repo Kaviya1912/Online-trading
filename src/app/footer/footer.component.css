@@ -1,0 +1,119 @@
+footer {
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 0, 44);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+footer .lastcontainer {
+  display: grid;
+  grid-template-columns: 500px 180px 200px 500px;
+  column-gap: 70px;
+}
+
+footer .lastcontainer h2 {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .lastcontainer p {
+  color: rgb(153, 153, 153);
+}
+
+.links {
+  margin-top: 20px;
+  display: flex;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(88, 85, 85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.links li a:hover {
+  background: rgb(191, 103, 235);
+}
+
+.links li a .fa-brands {
+  color: white;
+  font-size: 20px;
+}
+
+.quicklinks ul li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.quicklinks ul li a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.quicklinks ul li a:hover {
+  color: white;
+}
+
+.contactus .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.contactus .info li span:nth-child(1) {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contactus .info li span {
+  color: rgb(153, 153, 153);
+}
+
+.contactus .info li a {
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.contactus .info li a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  width: 100%;
+  background: rgb(88, 85, 85);
+  padding: 8px 100px;
+  text-align: center;
+  color: #dad0d0;
+}
+
+.message .text {
+  color: white;
+}
+
+.btn button {
+  color: rgb(182, 205, 238);
+  background: rgb(54, 0, 81);
+}
+
+.btn button:hover {
+  color: white;
+  cursor: pointer;
+  background: rgb(191,103,235);
+}

@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+<h1>IND Stocks</h1>
+    <head>
+        <meta charset="utf-8">
+        <title>IND STOCKS</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <main class="grid">
+                <article>
+                  <!-- <img src="/assets/images/HDFC.jpg" alt=""> -->
+                    <div class="text">
+                        <h3>HDFC</h3>
+                        <p>HDFC Bank Limited
+                        </p>
+                        <p>{{HDFC_Price | currency:'INR'}}</p>
+                        <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+
+                    </div>
+                </article>
+                <article>
+                    <!-- <img src="/assets/images/reliance.jpg" alt=""> -->
+                    <div class="text">
+                        <h3>Reliance</h3>
+                        <p>Reliance Industries Limited
+                        </p>
+                        <p>{{Reliance_Price | currency:'INR'}}</p>
+                        <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                    </div>
+                </article>
+                <article>
+                    <!-- <img src="/assets/images/TCS.jpg" alt=""> -->
+                    <div class="text">
+                        <h3>TCS </h3>
+                        <p>Tata Consultancy Services
+                        </p>
+                        <p>{{TCS_Price | currency:'INR'}}</p>
+                        <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                    </div>
+                </article>
+                <article>
+                  <!-- <img src="/assets/images/axisbank.png" alt=""> -->
+                  <div class="text">
+                      <h3>AXIS BANK</h3>
+                      <p>Axis Bank Limited
+                      </p>
+                      <p>{{AxisBank_Price | currency:'INR'}}</p>
+                      <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                  </div>
+              </article>
+              <article>
+                <!-- <img src="/assets/images/titan.png" alt=""> -->
+                <div class="text">
+                    <h3>TITAN</h3>
+                    <p>Titan Company Limited.
+                    </p>
+                    <p>{{Titan_Price | currency:'INR'}}</p>
+                    <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                </div>
+            </article>
+            <article>
+              <!-- <img src="/assets/images/infosys.png" alt=""> -->
+              <div class="text">
+                  <h3>INFOSYS</h3>
+                  <p>Infosys Limited
+                  </p>
+                  <p>{{Infosys_Price | currency:'INR'}}</p>
+                  <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+              </div>
+          </article>
+            </main>
+
+        </div>
+    </body>
+    <app-footer></app-footer>
+

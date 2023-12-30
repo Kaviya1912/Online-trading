@@ -1,0 +1,184 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "kaviya",
+      "email": "kaviya@gmail.com",
+      "mobile": 9573679823,
+      "stockinvested": 6,
+      "amount": 700
+    }
+  ],
+  "users": [
+    {
+      "username": "Kaviya44",
+      "mobileno": "9597459338",
+      "email": "kaviyakarthi19@gmail.com",
+      "password": "Kaviya@19",
+      "confirmpass": "Kaviya@19",
+      "role": "user",
+      "id": 1
+    },
+    {
+      "username": "Kaviya",
+      "mobileno": "9597459338",
+      "email": "kaviyakathi19@gmail.com",
+      "password": "Kaviya@19",
+      "confirmpass": "Kaviya@19",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "username": "Admin21",
+      "mobileno": "9597459338",
+      "email": "admin21@gmail.com",
+      "password": "Admin@21",
+      "confirmpass": "Admin@21",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "username": "DeebakRaaj16",
+      "mobileno": "8248783513",
+      "email": "deebakraaj3@gmail.com",
+      "password": "Deebak@16",
+      "confirmpass": "Deebak@16",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "username": "",
+      "mobileno": "",
+      "email": "",
+      "password": "",
+      "confirmpass": "",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "username": "KAVIYA",
+      "mobileno": "9597459338",
+      "email": "kaviya@gmail.com",
+      "password": "Kaviya@21",
+      "confirmpass": "Kaviya@21",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "username": "barath14",
+      "mobileno": "8220093330",
+      "email": "barath151819@gmail.com",
+      "password": "Barath@14",
+      "confirmpass": "Barath@14",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "username": "Kaviya",
+      "mobileno": "9876543210",
+      "email": "justmegirl19@gmail.com",
+      "password": "Justme@19",
+      "confirmpass": "Justme@19",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "username": "Gowtham",
+      "mobileno": "6789999456",
+      "email": "gowtham@gmail.com",
+      "password": "Gowtham@`27",
+      "confirmpass": "Gowtham@27",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "username": "xtsdfgyk",
+      "mobileno": "dztrdtfjg",
+      "email": "ffgj",
+      "password": ";lk",
+      "confirmpass": "[]o'pk;lj",
+      "role": "user",
+      "id": 10
+    }
+  ],
+  "IndStocks": [
+    {
+      "price": "300",
+      "category": "HDFC",
+      "image": "/assets/images/HDFC.jpg",
+      "id": "1"
+    },
+    {
+      "price": "400",
+      "category": "Reliance",
+      "image": "/assets/images/reliance.jpg",
+      "id": "2"
+    },
+    {
+      "price": "300",
+      "category": "TCS",
+      "image": "/assets/images/TCS.jpg",
+      "id": "3"
+    },
+    {
+      "price": "300",
+      "category": "Axis Bank",
+      "image": "/assets/images/axisbank.png",
+      "id": "4"
+    },
+    {
+      "price": "300",
+      "category": "Titan",
+      "image": "/assets/images/titan.png",
+      "id": "5"
+    },
+    {
+      "price": "300",
+      "category": "Infosys",
+      "image": "/assets/images/infosys.png",
+      "id": "6"
+    }
+  ],
+  "UsStocks": [
+    {
+      "price": "300",
+      "category": "Apple",
+      "image": "/assets/images/apple.png",
+      "id": "1"
+    },
+    {
+      "price": "400",
+      "category": "Amazon",
+      "image": "/assets/images/amazon.png",
+      "id": "2"
+    },
+    {
+      "price": "300",
+      "category": "Microsoft",
+      "image": "/assets/images/microsoft.png",
+      "id": "3"
+    },
+    {
+      "price": "300",
+      "category": "Nvidia",
+      "image": "/assets/images/nvidia.png",
+      "id": "4"
+    },
+    {
+      "price": "300",
+      "category": "Walt Disney",
+      "image": "/assets/images/disney.png",
+      "id": "5"
+    },
+    {
+      "price": "300",
+      "category": "Walmart",
+      "image": "/assets/images/walmart.png",
+      "id": "6"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

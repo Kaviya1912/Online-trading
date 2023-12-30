@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<br><br><br>
+
+<div class="container">
+  <div class="title">
+    <h2>Product Order Form</h2>
+  </div>
+  <div class="d-flex">
+    <form>
+      <label>
+        <span class="fname">Select the stock<span class="required">*</span></span>
+        <select name="stockType" [(ngModel)]="stockType" (ngModelChange)="updateStockType()">
+          <option value="select">Select Stocks...</option>
+          <option value="ind">IND Stocks</option>
+          <option value="us">US Stocks</option>
+        </select>
+      </label>
+      <label *ngIf="stockType !== 'select'">
+        <span>{{ stockType.toUpperCase() }} Stocks <span class="required"></span></span>
+        <select name="{{ stockType }}Stock" [(ngModel)]="selectedCategory" (ngModelChange)="updateStockQuantity()">
+          <option value="select">Select {{ stockType.toUpperCase() }} Stocks</option>
+          <option *ngFor="let stock of getStocksByType(stockType)" [value]="stock.category">{{ stock.category }}</option>
+        </select>
+      </label>
+      <label for="stockQuantity">
+        <span>Stock Quantity <span class="required">*</span></span>
+        <input type="number" name="stockQuantity" [(ngModel)]="stockQuantity" (ngModelChange)="updateStockQuantity()">
+      </label>
+
+      <label *ngIf="selectedCategory !== ''">
+        <!-- <span>Stock Price <span class="required">*</span></span> -->
+        <ng-container *ngIf="selectedCategory && stocks[stockType + ' Stocks']">
+          <span>${{ getStockPrice(selectedCategory) }}</span>
+        </ng-container>
+      </label>
+      <label>
+        <span class="fname">Amount<span class="required"></span></span>
+        <span *ngIf="selectedAmount !== ''">   Rs: {{ selectedAmount }}</span>
+      </label>
+    </form>
+  </div>
+</div>
+
+<input type="submit" routerLink="/payment" value="Proceed" class="submit-btn">
+
+<app-footer></app-footer>

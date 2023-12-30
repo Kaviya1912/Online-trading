@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+<h1>US Stocks</h1>
+    <head>
+        <meta charset="utf-8">
+        <title>US STOCKS</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <main class="grid">
+                <article>
+                    <!-- <img src="/assets/images/reliance.jpg" alt=""> -->
+                    <div class="text">
+                        <h3>APPLE</h3>
+                        <p>
+                          Apple Inc.
+                        </p>
+                        <p>{{Apple_Price | currency:'INR'}}</p>
+                        <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                    </div>
+                </article>
+                <article>
+                    <!-- <img src="/assets/images/amazon.png" alt=""> -->
+                    <div class="text">
+                        <h3>AMAZON</h3>
+                        <p>Amazon
+                        </p>
+                        <p>{{Amazon_Price | currency:'INR'}}</p>
+                        <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                    </div>
+                </article>
+                <article>
+                    <!-- <img src="/assets/images/microsoft.png" alt=""> -->
+                    <div class="text">
+                        <h3>MICOSOFT</h3>
+                        <p>Microsoft Corporation
+                        </p>
+                        <p>{{Microsoft_Price | currency:'INR'}}</p>
+                        <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                    </div>
+                </article>
+                <article>
+                  <!-- <img src="/assets/images/nvidia.png" alt=""> -->
+                  <div class="text">
+                    <h3>Nvidia </h3>
+                    <!-- <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/payment">Buy</a></button> -->
+                      <p>Nvidia Corporation
+                      </p>
+                      <p>{{Nvidia_Price | currency:'INR'}}</p>
+                      <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                  </div>
+              </article>
+              <article>
+                <!-- <img src="/assets/images/disney.png" alt=""> -->
+                <div class="text">
+                    <h3>Walt Disney</h3>
+                    <p>The Walt Disney Company
+                    </p>
+                    <p>{{Disney_Price | currency:'INR'}}</p>
+                    <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+                </div>
+            </article>
+            <article>
+              <!-- <img src="/assets/images/walmart.png" alt=""> -->
+              <div class="text">
+                  <h3>Walmart</h3>
+                  <p>Walmart Inc.
+                  </p>
+                   <p>{{Walmart_Price | currency:'INR'}}</p>
+                  <button><a style="color: #fff; margin-top: 10px; text-decoration: none;" routerLink="/details">Buy</a></button>
+              </div>
+          </article>
+            </main>
+
+        </div>
+    </body>
+<app-footer></app-footer>
+

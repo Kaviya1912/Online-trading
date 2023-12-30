@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header">
+      <h2>Login</h2>
+
+  </div>
+  <form class="form" [formGroup]="loginForm2" (ngSubmit)="login3()">
+      <div class="form-control">
+
+          <i class="fa fa-envelope"></i>&nbsp;&nbsp;<label for="Email"></label><br>
+          <input type="email" placeholder="Enter your registered email id" [(ngModel)]= "email" formControlName="email" required>
+          <div class="error" *ngIf="loginForm2.controls['email'].invalid&&loginForm2.controls['email'].dirty">
+            <small *ngIf="loginForm2.controls['email'].errors?.['required']">Please Enter email</small>
+            <small *ngIf="loginForm2.controls['email'].errors?.['pattern']">Please enter correct email</small>
+          </div>
+
+          <i class="fa fa-lock"></i>&nbsp;&nbsp;<label for="Password"></label><br>
+          <input type="password" placeholder="Enter your password" [(ngModel)]= "password" formControlName="password" required>
+          <div class="error" *ngIf="loginForm2.controls['password'].invalid&&loginForm2.controls['password'].dirty">
+            <small *ngIf="loginForm2.controls['password'].errors?.['required']">Please Enter Password</small>
+
+          </div><br>
+          <a routerLink="/forgetpassword" class="fp" style="color: black;">Forgot password?</a>
+      </div>
+      <button [disabled]="!loginForm2.valid" >Login</button>
+  </form>
+  <div class="header1">
+      <p>Don't have an account? <a routerLink="/signup" style="text-decoration:none ;" ><a style=color:black> new account</a></a></p>
+  </div>
+
+</div>
+<!-- <app-footer></app-footer> -->

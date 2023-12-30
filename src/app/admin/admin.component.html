@@ -1,0 +1,88 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h1>KB Stocks</h1>
+    <div class="d-flex">
+      <button (click)="clickAddInvestor()"  type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Investors</button>
+      <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
+
+    </div>
+
+  </div>
+
+</nav>
+<table class="table mt-3">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">User name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile No</th>
+      <th scope="col">Stock Invested</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of investorData">
+      <td>{{row.id}}</td>
+      <td>{{row.username}}</td>
+      <td>{{row.email}}</td>
+      <td>{{row.mobile}}</td>
+      <td>{{row.stockinvested}}</td>
+      <td>{{row.amount}}</td>
+      <!-- <td>1</td>
+      <td>Kaviya</td>
+      <td>kaviyakarthi19@gmail.com</td>
+      <td>9597459338</td>
+      <td>2</td>
+      <td>$70</td> -->
+      <td>
+        <button (click)="onEdit(row)" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Edit</button>
+        <button (click)="deleteInvestor(row)" class="btn btn-danger mx-3">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Investor Detail</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">User Name</label>
+            <input type="text" formControlName="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+            <input type="number" formControlName="mobile" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Stock Invested</label>
+            <input type="number" formControlName="stockinvested" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Amount</label>
+            <input type="number" formControlName="amount" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" (click)="postInvestorDetails()" class="btn btn-primary">Add</button>
+        <button type="button" *ngIf="showUpdate" (click)="updateInvestorDetails()" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
